@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<!-- The Nav Bar -->
+    <nav class="navbar sticky-top navbar-expand-sm color-primary">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="title-header" href="#">Dashboard</a>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link color-secondary" href="#">Feature</a></li>
+                <li class="nav-item"><a class="nav-link color-secondary" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link color-secondary" href="#">Concepts</a></li>
+            </ul>
+            <div class="container right">
+                <span class="navbar-text color-tertiary"> Today's Jam: </span>
+            </div>
+            <div class="greenPlayer" id="TodaysJam">
+                <audio src="./audio/La Di Da.mp3"></audio>
+            </div>
+        </div>
+    </nav>
+ 
+<!-- The Feature -->
+    <div class="jumbotron p-4 p-md-5 rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm ">
+                    <h1 class="color-tertiary ">Feature</h1>
+                    <div class="container feature-cap color-tertiary" id="feature-cap">
+                        <!--metadata about the feature item goes here-->
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <img src="" class="feature-item" id="feature" alt="" data-toggle="modal" data-target="">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+<!-- The Gallery -->
+    <div class="gallery" id="gallery" style="background-color: #fbfbfb"> 
+        <h1 class="color-tertiary">Gallery</h1>
+        <div class="row gallery-row">
+            <div class="col-sm" id="g1">
+                <img src=C:\Users\westw.DESKTOP-22MQC2O\Desktop\Works\Art\Azia_full.png class="gallery-item" alt="first image" id="g1-img" data-toggle="modal" data-target="#modal1" >
+                <div class="caption" id="g1-cap">
+                    "Azia"
+                </div>
+            </div>
+            <div class="col-sm" id="g2">
+                <img src="C:\Users\westw.DESKTOP-22MQC2O\OneDrive\Documents\Art\AnY\JAEHA.jpg" class="gallery-item" alt="pardon-me-img" id="g2-img" data-toggle="modal" data-target="#modal2" >
+                <div class="caption" id="g2-cap">
+                        "Pardon Me" 
+                </div>
+            </div>
+        </div>
+        <div class="row gallery-row">
+            <div class="col-sm" id="g3">
+                <img src="images/Looks.jpg" class="gallery-item" alt="looks-img" id="g3-img" data-toggle="modal" data-target="#modal3">
+                <div class="caption" id="g3-cap">
+                        "Looks"
+                </div>            
+            </div>
+            <div class="col-sm" id="g4">
+                <img src="C:\Users\westw.DESKTOP-22MQC2O\OneDrive\Documents\Art\AnY\KIJA.jpg" class="gallery-item" alt="you-called-img" id="g4-img" data-toggle="modal" data-target="#modal4" >
+                <div class="caption" id="g4-cap">
+                        "You Called?"
+                </div>
+            </div>
+        </div>
+        <div class="row gallery-row">
+            <div class="col-sm" id="g5">
+                <img src="C:\Users\westw.DESKTOP-22MQC2O\OneDrive\Documents\Art\AnY\ZZZZ.jpg" class="gallery-item" alt="untitled-img" id="g5-img" data-toggle="modal" data-target="#modal5">
+                <div class="caption" id="g5-cap">
+                        "Untitled"
+                </div>            
+            </div>
+            <div class="col-sm" id="g6">
+                <img src="C:\Users\westw.DESKTOP-22MQC2O\OneDrive\Documents\Art\AnY\yellow.jpg" class="gallery-item" alt="-img" id="g6-img" data-toggle="modal" data-target="#modal6" >
+                <div class="caption" id="g6-cap">
+                        "Yellow Buddies"
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Gallery Modals -->
+    <!-- Img1 Modal - "Azia" -->
+    <div class="modal fade" id="modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" id="modal title">
+                    <h3>Azia</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="close" id="closer">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <img src="C:\Users\westw.DESKTOP-22MQC2O\Desktop\Works\Art\Azia_full.png" class="mImage" id="m1" alt="azia-img">
+                </div>
+                <div class="container gallery-body">
+                    <p>
+                        Concept art from <em>Angel's Curse</em>, a fantasy story from around 2015. 
+                        Here, Azia (the main character) is suffused with power during the climactic peak.
+                    </p>
+                    <p>Completed: 2019-05-19</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Img2 Modal - "Pardon Me" -->
+    <div class="modal fade" id="modal2">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header" id="modal title">
+                    <h3>Pardon Me</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="close" id="closer">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <img src="C:\Users\westw.DESKTOP-22MQC2O\OneDrive\Documents\Art\AnY\JAEHA.jpg" class="mImage" id="m2" alt="pardon-me-img">
+                </div>
+                <div class="container gallery-body">
+                    <p>
+                        Redraw of Jae-ha from Akatsuki no Yona, Chapter #: __. Jae-ha has just jumped over the castle walls of the Tully tribe
+                        to announce cooperation from the Sen Province, and is very much done with just about everything. Just look at his tired face.
+                        The pattern on his robe was done by hand and a pain to do. The floofiness of his cloak is excellent.                        
+                    </p>
+                    <p>Completed: 2018-05-08</p>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <!-- Img3 Modal - "Looks" -->
+    <div class="modal fade" id="modal3">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header" id="modal title">
+                        <h3>Looks</h3>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span class="close" id="closer">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        <img src="images/Looks.jpg" class="mImage" id="m3" alt="Looks-img">
+                    </div>
+                    <div class="container gallery-body">
+                        <p>
+                            Rendering of a sketched redraw from Akatsuki no Yona, Chapter 24: Light. 
+                            Shin-ah's face is shown after his mask comes off for the first time.
+                            "Signature Ink" brush was used for colouring to add texture.
+                        </p>
+                        <p>Completed: 2019-07-04</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+    <!-- Img4 Modal - "You Called" -->
+    <div class="modal fade" id="modal4">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" id="modal title">
+                    <h3>You Called</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="close" id="closer">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <img src="C:\Users\westw.DESKTOP-22MQC2O\OneDrive\Documents\Art\AnY\KIJA.jpg" class="mImage" id="m4" alt="you-called-img">
+                </div>
+                <div class="container gallery-body">
+                    <p>
+
+                    </p>
+                    <p>Completed: 2019-05-05</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Img5 Modal - "Untitled" -->
+    <div class="modal fade" id="modal5">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header" id="modal title">
+                        <h3>Untitled</h3>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span class="close" id="closer">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        <img src="C:\Users\westw.DESKTOP-22MQC2O\OneDrive\Documents\Art\AnY\ZZZZ.jpg" class="mImage" id="m5" alt="Untitled-img">
+                    </div>
+                    <div class="container gallery-body">
+                        <p>
+                            Redraw & extrapolation of Zeno from Akatsuki no Yona, Chapter #:___. After dropping several hundred feet, breaking all his bones
+                            and skinning half his face off, Zeno's badass mode has been triggered and his glares are set to death-ray. The original panel
+                            (much smaller shot) conveyed the attacking soldier's short but terrifying experience beautifully. 
+                        </p>
+                        <p>
+                            Employing a lighting overlay layer really brought out depth here. This one's a personal favourite. 
+                        </p>
+                        <p>Completed: 2019-06-19</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+    <!-- Img6 Modal - "Yellow Buddies" -->
+    <div class="modal fade" id="modal6">
+            <div class="modal-dialog modal-lg">  <!-- add "modal-lg" class for landscape imgs-->
+                <div class="modal-content">
+                    <div class="modal-header" id="modal title">
+                        <h3>Yellow Buddies</h3>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span class="close" id="closer">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        <img src="C:\Users\westw.DESKTOP-22MQC2O\OneDrive\Documents\Art\AnY\yellow.jpg" class="mImage" id="m6" alt="Yellow Buddies-img">
+                    </div>
+                    <div class="container gallery-body">
+                        <p>
+                            <!--MODAL BODY-->
+                        </p>
+                        <p>Completed: 2019-05-28</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+<!-- Floating Button -->
+        <button type="button" class="btn btn-primary btn-float" data-toggle="modal" data-target="#float-modal">
+            😀
+        </button>
+        <!-- And modal  -->
+        <div class="modal fade" id="float-modal">
+            <div class="modal-dialog" >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <em>Have some motivation...</em>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://66.media.tumblr.com/e7acb5a8e16d00b85b5d13f0579b1044/tumblr_inline_p8zy5zbfSk1s8ltii_1280.png">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><em>Close</em></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- The Footer -->
+    <footer class="footer color-primary">
+        <div class="container color-tertiary">
+            Dashboard &copy;YC 2019
+        </div>
+    </footer>
+
+<!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

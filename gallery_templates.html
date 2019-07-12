@@ -1,0 +1,41 @@
+<!-- Template code for adding new gallery items to the gallery. -->
+<!-- USAGE: copy-paste at the end of the gallery - MAKE SURE IT IS IN A ROW (add if necessary)
+            Then find-and-replace '$$' with the gallery number
+            And find-and-replace 'TITLE' (be sure to match case) with the image title. 
+            Finally, enter the img src field, and fill in the caption manually. 
+-->
+    <div class="col-sm" id="g$$">
+            <img src="" class="gallery-item" alt="TITLE-img" id="g$$-img" data-toggle="modal" data-target="#modal$$">
+            <div class="caption" id="g$$-cap">
+                    Caption
+            </div>            
+    </div>
+
+<!-- Template code for adding new Modals to gallery items. -->
+<!-- USAGE: copy-paste at end of Modal section in index.html.
+            Then find-and-replace '$$' with the gallery number,
+            And find-and-replace 'TITLE' (be sure to match case) with the image title.
+            Finally, enter the img src field, and fill in the modal body text and completion date manually.
+ -->
+    <!-- Img$$ Modal - "TITLE" -->
+    <div class="modal fade" id="modal$$">
+        <div class="modal-dialog">  <!-- add "modal-lg" class for landscape imgs-->
+            <div class="modal-content">
+                <div class="modal-header" id="modal title">
+                    <h3>TITLE</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="close" id="closer">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <img src="" class="mImage" id="m$$" alt="TITLE-img">
+                </div>
+                <div class="container gallery-body">
+                    <p>
+                        <!--MODAL BODY-->
+                    </p>
+                    <p>Completed: 2019-01-01</p>
+                </div>
+            </div>
+        </div>    
+    </div>

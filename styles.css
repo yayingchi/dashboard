@@ -1,0 +1,120 @@
+body {
+    background-color: #fbfbfb;
+}
+
+h1 {
+    font-family: 'Source Serif Pro', serif;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: 'Source Serif Pro', serif;
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.title-header {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2rem;
+    margin-right: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.title-header:hover {
+    text-decoration: none;
+}
+
+.right {
+    text-align: right;
+}
+
+.caption {
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+    color: #756c83;
+    width: 70%;
+}
+
+.feature {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    padding: 2rem;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    width: 400px;
+    padding: 5px;
+    border: 3px solid #f38181;
+}
+
+#feature-cap {
+    color: #756c83
+}
+
+.inline {
+    display: inline-block;
+}
+
+.gallery {
+    padding: 2rem 4rem;
+}
+
+.gallery-row {
+    padding-bottom: 2rem;
+}
+
+.gallery-item {
+    height: 300px;
+    padding: 15px;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    padding-bottom: 50%;
+}
+
+.mImage {
+    width: 100%;
+}
+
+.modal-header {
+    padding-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.btn-float {
+    background-color: #f38181;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px; 
+}
+
+.footer {
+    text-align: center;
+    margin-top:40px;
+    padding: 15px;
+}
+
+.color-primary {
+    background-color: #756c83;
+}
+.color-secondary {
+    color: white;
+}
+
+.color-tertiary {
+    color: #f38181;
+}
+
