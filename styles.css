@@ -77,6 +77,10 @@ img {
     padding: 15px;
 }
 
+.gallery-item:hover {
+    cursor: pointer;
+}
+
 .vertical-center {
     margin: 0;
     position: absolute;
